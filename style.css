@@ -13,6 +13,11 @@
     background-color: #1F2937;
 }
 
+.sign-up-container, button {
+    background-color: #3882F9;
+}
+
+/* styling for header starts here */
 .header {
     display: flex;
     justify-content: space-between;
@@ -20,12 +25,28 @@
     padding-bottom: 25px;
 }
 
+.menu {
+    display: flex;
+    gap: 24px;
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* styling for common attributes of header and hero */
 .header, .section-one {
     padding-left: 200px;
     padding-right: 200px;
     margin: 0;
 }
 
+/* styling for hero (or section one) starts here */
 .section-one {
     display: flex;
     justify-content: space-between;
@@ -33,6 +54,26 @@
     padding-bottom: 75px;
 }
 
+.logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+/* hero image placeholder */
+.section-one .right {
+    display: flex;
+    /* border: 4px solid red; */
+    width: 480px;
+    height: 270px;
+
+    background-color:rgb(97, 99, 99);
+    color: white;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* styling for section two starts here */
 .section-two {
     display: flex;
     flex-direction: column;
@@ -53,6 +94,14 @@
     justify-content: center;
 }
 
+/* information image placeholder */
+.content img {
+    border: 4px solid skyblue;
+    width: 150px;
+    height: 150px;
+}
+
+/* styling for section three starts here */
 .section-three {
     display: flex;
     flex-direction: column;
@@ -80,48 +129,31 @@
     margin-right: 100px;
 }
 
-.menu {
+/* styling section four starts here */
+.section-four {
     display: flex;
-    gap: 24px;
-
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    align-items: center;
+    height: 350px;
 }
 
-.menu a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.logo {
-    font-size: 24px;
-    color: #F9FAF8;
-}
-
-.sign-up-container, button {
-    background-color: #3882F9;
-}
-
-
-
-/* hero image placeholder */
-.section-one .right {
+.sign-up-container {
     display: flex;
-    /* border: 4px solid red; */
-    width: 480px;
-    height: 270px;
+    justify-content: space-between;
+    align-items: center;
 
-    background-color:rgb(97, 99, 99);
-    color: white;
+    margin-left: 200px;
+    margin-right: 200px;
 
+    padding-left: 100px;
+    padding-right: 100px;
+
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.footer {
+    display: flex;
     justify-content: center;
     align-items: center;
-}
-
-/* information image placeholder */
-.content img {
-    border: 4px solid skyblue;
-    width: 150px;
-    height: 150px;
+    height: 100px;
 }
