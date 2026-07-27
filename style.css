@@ -99,6 +99,9 @@ img {
     gap: 10px;
 }
 
+.section-one button {
+    align-self: flex-start;
+}
 
 .logo {
     font-size: 24px;
