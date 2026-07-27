@@ -8,6 +8,12 @@ body, h1, p {
     margin: 0;
 }
 
+img {
+    max-width: 100%;
+    /* max-height: 100%; */
+    object-fit: cover;
+}
+
 .subtext {
     color: rgb(78, 78, 78);
 }
@@ -93,9 +99,6 @@ body, h1, p {
     gap: 10px;
 }
 
-.section-one .right {
-    flex-shrink: 0;
-}
 
 .logo {
     font-size: 24px;
@@ -115,6 +118,9 @@ body, h1, p {
 
     justify-content: center;
     align-items: center;
+
+    flex-shrink: 0;
+    overflow: hidden;
 }
 
 /* styling for section two starts here */
