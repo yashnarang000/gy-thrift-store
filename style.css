@@ -45,8 +45,8 @@ img {
 .sign-up-button {
     background-color: #3882F9;
     border: 3px solid white;
-    width: 130px;
-    height: 40px;
+    min-width: 130px;
+    min-height: 40px;
     font-size: larger;
     font-weight: bold;
     color: white;
