@@ -83,6 +83,7 @@ body, h1, p {
     justify-content: space-between;
     padding-top: 50px;
     padding-bottom: 75px;
+    gap: 100px;
 }
 
 .section-one .left {
@@ -90,6 +91,10 @@ body, h1, p {
     flex-direction: column;
     justify-content: space-evenly;
     gap: 10px;
+}
+
+.section-one .right {
+    flex-shrink: 0;
 }
 
 .logo {
