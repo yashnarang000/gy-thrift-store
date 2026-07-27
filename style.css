@@ -14,6 +14,10 @@ img {
     object-fit: cover;
 }
 
+button {
+    cursor: pointer;
+}
+
 .subtext {
     color: rgb(78, 78, 78);
 }
