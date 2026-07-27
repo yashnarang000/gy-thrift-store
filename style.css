@@ -1,3 +1,21 @@
+@import url('https://googleapis.com');
+
+/* misc styling starts here */
+body, h1, p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.subtext {
+    color: rgb(78, 78, 78);
+}
+
+.section-four, .footer {
+     color: white;
+}
+
 .main-text {
     font-size: 48px;
     color: #F9FAF8;
@@ -15,6 +33,17 @@
 
 .sign-up-container, button {
     background-color: #3882F9;
+    border-radius: 0.5cqw;
+}
+
+.sign-up-button {
+    background-color: #3882F9;
+    border: 3px solid white;
+    width: 130px;
+    height: 40px;
+    font-size: larger;
+    font-weight: bold;
+    color: white;
 }
 
 /* styling for header starts here */
@@ -23,6 +52,7 @@
     justify-content: space-between;
     padding-top: 25px;
     padding-bottom: 25px;
+    /* flex-grow: 1; */
 }
 
 .menu {
@@ -41,6 +71,7 @@
 
 /* styling for common attributes of header and hero */
 .header, .section-one {
+    /* border: 2px solid red; */
     padding-left: 200px;
     padding-right: 200px;
     margin: 0;
@@ -50,13 +81,21 @@
 .section-one {
     display: flex;
     justify-content: space-between;
-    /* padding-top: 50px; */
+    padding-top: 50px;
     padding-bottom: 75px;
+}
+
+.section-one .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
 }
 
 .logo {
     font-size: 24px;
     color: #F9FAF8;
+    font-weight: bold;
 }
 
 /* hero image placeholder */
@@ -77,26 +116,35 @@
 .section-two {
     display: flex;
     flex-direction: column;
+    align-items: center;
     /* padding-top: 50px;
     padding-bottom: 50px; */
-    height: 350px;
+    min-height: 500px;
 }
 
 .section-two h1 {
     text-align: center;
     font-size: 36px;
     color: #1F2937;
-    font-weight: 900;
+    font-family: inherit;
+    font-weight: 1000;
+    padding: 50px;
 }
 
 .content {
+    /* border: 2px solid red; */
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 50px;
+
 }
 
 /* information image placeholder */
 .content img {
-    border: 4px solid skyblue;
+    border: 4px solid #3882F9;
+    border-radius: 0.5cqw;
     width: 150px;
     height: 150px;
 }
@@ -107,18 +155,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #E5E7EB;
+    background-color: #E5E7EB; 
+    color: #1F2937;
 
     /* padding-top: 50px;
     padding-bottom: 50px; */
 
-    height: 350px;
+    min-height: 350px;
+    gap: 20px;
 }
 
 .section-three h1 {
     font-size: 36px;
-    color: #1F2937;
-    font-weight: 300;
+    font-weight: 100;
     font-style: italic;
     margin: 0;
 }
@@ -126,7 +175,10 @@
 .section-three p {
     /* border: 2px solid blue; */
     margin-left: auto;
-    margin-right: 100px;
+    margin-right: 200px;
+
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 /* styling section four starts here */
@@ -149,6 +201,21 @@
 
     flex-wrap: wrap;
     flex-grow: 1;
+    
+    min-height: 150px;
+}
+
+.sign-up-container .left {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 14px;
+}
+
+.sign-up-container h1 {
+    font-weight: bold;
 }
 
 .footer {
